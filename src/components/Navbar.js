@@ -11,7 +11,7 @@ export default function Navbar() {
                 const {handleSidebar} = value;
                 return (
                     <NavWrapper>
-                    <div className="navbar navbar-expand-lg navbar-light bg-length" style={{background: "#EAE7DC"}}>
+                    <div className="navbar navbar-expand-lg navbar-light bg-length" style={{background: "var(--mainDark)"}}>
                 <div className="collapse navbar-collapse show ml-sm-5">
                     <ul className="navbar-nav text-right">
                         <li className="navbar-item">

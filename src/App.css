@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Cagliostro|Muli|Nunito');
 
 :root{
-    --main: #EAE7DC;
-    --mainLight: #D8C3A5;
+    --main: #CCCBC6;
+    --mainDark: #EAE7DC;
 }
 
 body{
     font-family: 'Muli', sans-serif !important;
 }
 
+
+/* 
+--main: #EAE7DC;
+    --mainDark: #D8C3A5; */

@@ -14,7 +14,7 @@ class Sidebar extends React.Component {
                         <ul>
                             <li className="sidebar-link">Football App </li>
                             <li className="sidebar-link">Top Trumps Game </li>
-                            <li className="sidebar-link">33333 </li>
+                            <li className="sidebar-link">33333</li>
                         </ul>
                         </div>
                         </SideWrapper>
@@ -32,8 +32,8 @@ const SideWrapper = styled.nav`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--main);
-    border-right: 4px solid var(--mainLight);
+    background-color: var(--mainDark);
+    border-right: 4px solid var(--main);
     z-index: 1;
     transition: all 0.3s ease-in-out;
     transform: ${props => props.show ? 'translateX(0)' : 'translateX(-100%)'};

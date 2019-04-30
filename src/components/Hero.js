@@ -16,8 +16,9 @@ const HeroWrapper = styled.div`
 text-align: center;
 display: flex;
 align-items: center;
+justify-content: center;
 min-height: ${props => props.max ? '100vh' : '60vh'};
-background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${props => props.img}) center/cover
+background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${props => props.img}) center/cover no-repeat;
 `
 
 Hero.defaultProps = {
