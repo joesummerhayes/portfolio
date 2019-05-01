@@ -11,7 +11,7 @@ class ProjectList extends React.Component {
             <div className="container">
                 <div className="row">
                     <div className="col-md-4">
-                    <Project title="prem app" img={premImg} description="hello from prem"/>
+                    <Project title="prem app" img={premImg} description="change test"/>
                     </div>
                     <div className="col-md-4">
                     <Project title="prem app" img={teaAtOakimg} description="hello from prem" />
