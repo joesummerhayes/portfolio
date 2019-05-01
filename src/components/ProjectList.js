@@ -3,51 +3,38 @@ import styled from 'styled-components';
 import Project from './Project';
 import salahImg from '../images/salah.png';
 import premImg from '../images/prem.png';
+import teaAtOakimg from '../images/teaAtOak.png';
 
 class ProjectList extends React.Component {
     render() {
         return (
-
-            <ProjectWrapper>
-                <div className="container">
-                    <div className="row">
-                        <div className="mx-auto text-center text-capitalize mb-3">
-                            <h2>Here are my projects</h2>
-                        </div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-4">
+                    <Project title="prem app" img={premImg} description="hello from prem"/>
                     </div>
-                    <div className="row">
-                        <div className="col-6">
-                            <Project
-                                title="Top Trumps App"
-                                img={salahImg}
-                                description="this is some description about the top trumps app"
-                            />
-                        </div>
-                        <div className="col-6">
-                            <Project
-                                title="Premier League App"
-                                img={premImg}
-                                description="this is my premier league app!"
-                            />
-                        </div>
+                    <div className="col-md-4">
+                    <Project title="prem app" img={teaAtOakimg} description="hello from prem" />
+                    </div>
+                    <div className="col-md-4">
+                    <Project title="prem app" img={premImg} description="hello from prem" />
                     </div>
                 </div>
-
-
-            </ProjectWrapper>
-
-
-
-
-
+                <div className="row">
+                    <div className="col-md-4">
+                    <Project title="prem app" img={premImg} description="hello from prem" />
+                    </div>
+                    <div className="col-md-4">
+                    <Project title="prem app" img={premImg} description="hello from prem" />
+                    </div>
+                    <div className="col-md-4">
+                    <Project title="prem app" img={premImg} description="hello from prem" />
+                    </div>
+                </div>
+            </div>
         )
     }
 }
 
 
 export default ProjectList
-
-
-const ProjectWrapper = styled.div`
-background: var(--main)
-`
