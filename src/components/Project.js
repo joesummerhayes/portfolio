@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 class Project extends React.Component {
     render() {
-        const {img, description, title} = this.props
+        const {img, description, title, url} = this.props
         return (
             <ProjectWrapper>
                 <div className="col-12" style={{padding: "1rem"}}>
@@ -16,6 +16,11 @@ class Project extends React.Component {
                         <div className="content" style={{padding: "1rem"}}>
                             <span className="header">{title}</span>
                             <div className="description">{description}</div>
+                            <div className="extra">
+                                <a href={url} target="_blank">
+                                <button className="ui blue basic button">check it out<i className="icon angle right"></i></button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

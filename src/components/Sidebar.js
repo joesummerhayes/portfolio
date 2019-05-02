@@ -1,6 +1,7 @@
 import React from 'react';
 import {MyConsumer, MyProvider} from '../context';
 import styled from 'styled-components';
+import {projectData} from '../context/projectData';
 
 class Sidebar extends React.Component {
     render() {
@@ -12,13 +13,18 @@ class Sidebar extends React.Component {
                     return <SideWrapper show={sidebarOpen} onClick={handleSidebar}>
                         <div>
                         <ul>
-                            <li className="sidebar-link">Football App </li>
-                            <li className="sidebar-link">Top Trumps Game </li>
-                            <li className="sidebar-link">33333</li>
+                            {projectData.map((project) => {
+                                return (
+                                    <a className="sidebar-link"
+                                    style={{textDecoration: "none", color:"black"}}
+                                    target="_blank" href={project.url}>
+                                    {project.title}
+                                    </a>
+                                )
+                            })}                            
                         </ul>
                         </div>
                         </SideWrapper>
-                    
                 }}
             </MyConsumer>
         )
@@ -40,7 +46,6 @@ const SideWrapper = styled.nav`
     ul{
         list-style-type: none;
         padding: 0!important;
-
     }
     .sidebar-link{
         display: block;
