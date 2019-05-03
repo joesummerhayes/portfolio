@@ -2,6 +2,7 @@ import React from 'react';
 import {MyConsumer} from '../context';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
+import Song from '../music/song.mp3';
 
 
 
@@ -33,6 +34,7 @@ export default function Navbar() {
                     </ul>
 
                 </div>
+                <audio class = "music" src={Song} controls />
             </div>
             </NavWrapper>
                 )

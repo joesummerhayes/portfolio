@@ -13,11 +13,11 @@ class Home extends React.Component {
             <>
                 
                 <div>
-                    <ScrollIntoView selector='.hello'>
-                    <Hero max="true" />
+                    <ScrollIntoView selector='.scrollTo'>
+                        <Hero max="true" />
                     </ScrollIntoView>
                 </div>
-                <div className="hello">
+                <div className="scrollTo">
                     <ProjectList />
                 </div>
             </>

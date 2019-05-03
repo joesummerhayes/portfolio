@@ -33,7 +33,7 @@ export default function Footer() {
 
 
 const FooterWrapper = styled.nav`
-    background: var(--main) !important;
+    background: var(--mainDark) !important;
     min-height: 3rem;
     padding: 1rem;
     .icon {
