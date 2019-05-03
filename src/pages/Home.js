@@ -6,7 +6,7 @@ class Home extends React.Component {
     render() {
         return (
             <>
-                <Hero title="My Projects" max="true" />
+                <Hero max="true" />
                 <ProjectList />
             </>
         )

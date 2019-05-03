@@ -14,16 +14,21 @@ export default function Navbar() {
                     <NavWrapper>
                     <div className="navbar navbar-expand-lg navbar-light bg-length" style={{background: "var(--mainDark)"}}>
                 <div className="collapse navbar-collapse show ml-sm-5">
-                    <ul className="navbar-nav text-right">
-                        <li className="navbar-item">
-                            <Link to="/" className="nav-link" onClick={handleSidebar}>Projects</Link>
+                    <ul className="navbar-nav">
+                        <li className="navbar-item mx-2">
+                            <Link className="nav-link" onClick={handleSidebar} style={{marginRight: "3rem"}}>
+                            <i className="list icon"></i>
+                            </Link>
                         </li>
-                        <li className="navbar-item">
-                            <Link to="/recipes" className="nav-link">About Me</Link>
+                        <li className="navbar-item mx-2">
+                            <Link to="/" className="nav-link">Projects</Link>
+                        </li>
+                        <li className="navbar-item mx-2">
+                            <Link to="/aboutMe" className="nav-link">About Me</Link>
                             
                         </li>
-                        <li className="navbar-item">
-                            <Link to="/recipes" className="nav-link">About Me</Link>
+                        <li className="navbar-item mx-2">
+                            <Link to="/contact" className="nav-link">Contact</Link>
                         </li>
                     </ul>
 

@@ -6,6 +6,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import Home from './pages/Home';
+import AboutMe from './pages/AboutMePage';
+import Contact from './pages/ContactPage';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
 
         <Switch>
             <Route path="/" exact component={Home} />
+            <Route exact path="/aboutMe" component={AboutMe} />
+            <Route exact path="/contact" component={Contact} />
         </Switch>
 
         <Footer />
