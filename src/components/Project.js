@@ -17,7 +17,7 @@ class Project extends React.Component {
                             <span className="header">{title}</span>
                             <div className="description">{description}</div>
                             <div className="extra">
-                                <a href={url} target="_blank">
+                                <a href={url} target="_blank" rel="noopener noreferrer">
                                 <button className="ui blue basic button">check it out<i className="icon angle right"></i></button>
                                 </a>
                             </div>

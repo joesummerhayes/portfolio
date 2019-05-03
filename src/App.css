@@ -3,13 +3,11 @@
 :root{
     --main: #CCCBC6;
     --mainDark: #EAE7DC;
+    --sidebarHover: #e3c4a8;
+    --mainTransition: all 0.3s ease-in-out;
 }
 
 body{
     font-family: 'Muli', sans-serif !important;
 }
 
-
-/* 
---main: #EAE7DC;
-    --mainDark: #D8C3A5; */

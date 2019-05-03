@@ -1,5 +1,5 @@
 import React from 'react';
-import {MyConsumer, MyProvider} from '../context';
+import {MyConsumer} from '../context';
 import styled from 'styled-components';
 import {projectData} from '../context/projectData';
 
@@ -16,8 +16,10 @@ class Sidebar extends React.Component {
                             {projectData.map((project) => {
                                 return (
                                     <a className="sidebar-link"
+                                    key={project.id}
                                     style={{textDecoration: "none", color:"black"}}
-                                    target="_blank" href={project.url}>
+                                    target="_blank" rel="noopener noreferrer"
+                                    href={project.url}>
                                     {project.title}
                                     </a>
                                 )
@@ -51,8 +53,13 @@ const SideWrapper = styled.nav`
         display: block;
         font-size: 1.5rem;
         text-transform:capitalize;
-        padding:0.5rem 1.5rem;
+        padding:1.2rem 1.5rem;
         background: transparent;
+        transition: var(--mainTransition);
+    }
+
+    .sidebar-link:hover {
+        background: var(--sidebarHover);
 
 
     }

@@ -9,6 +9,7 @@
     "react-icons": "^3.6.1",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
+    "react-scroll-into-view": "^1.5.0",
     "styled-components": "^4.2.0"
   },
   "scripts": {

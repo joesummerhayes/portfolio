@@ -16,7 +16,7 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse show ml-sm-5">
                     <ul className="navbar-nav">
                         <li className="navbar-item mx-2">
-                            <Link className="nav-link" onClick={handleSidebar} style={{marginRight: "3rem"}}>
+                            <Link to="" className="nav-link" onClick={handleSidebar} style={{marginRight: "3rem"}}>
                             <i className="list icon"></i>
                             </Link>
                         </li>
