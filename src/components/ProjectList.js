@@ -25,10 +25,3 @@ class ProjectList extends React.Component {
 
 
 export default ProjectList
-
-
-
-
-                    // <div className="col-md-4">
-                    // <Project title="prem app" img={premImg} description="hello from prem" />
-                    // </div>

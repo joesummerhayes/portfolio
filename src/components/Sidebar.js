@@ -36,35 +36,37 @@ class Sidebar extends React.Component {
 
 const SideWrapper = styled.nav`
     position: fixed;
-    top: 55px;
+    top: 75px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--mainDark);
-    border-right: 4px solid var(--main);
+    background-color: white;
+    border-right: 4px solid var(--sidebarHover3);
     z-index: 1;
     transition: all 0.3s ease-in-out;
     transform: ${props => props.show ? 'translateX(0)' : 'translateX(-100%)'};
+    font-family: var(--titleFont);
+
     ul{
         list-style-type: none;
         padding: 0!important;
     }
     .sidebar-link{
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         text-transform:capitalize;
-        padding:1.2rem 1.5rem;
+        padding:1.3rem 1.3rem;
         background: transparent;
         transition: var(--mainTransition);
     }
 
     .sidebar-link:hover {
-        background: var(--sidebarHover);
+        background: var(--sidebarHover3);
 
 
     }
     @media (min-width: 576px) {
-        width: 20rem;
+        width: 16rem;
     }
 `
 

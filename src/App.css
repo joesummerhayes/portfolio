@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Cagliostro|Muli|Nunito');
 
 :root{
-    --main: #CCCBC6;
-    --mainDark: #EAE7DC;
-    --sidebarHover: #e3c4a8;
+    --main: #9BC967;
+    --main2: #3abf20;
+
+    --sidebarHover: #c9fe99;
+    --sidebarHover2: #b2cd9a;
+    --sidebarHover3: #c3f1b5;
+
+    --mainOrange: #FF4908;
     --mainTransition: all 0.3s ease-in-out;
+    --titleFont: 'Noto Sans JP', sans-serif !important;
+    --bodyFont: 'Questrial', sans-serif !important;
 }
 
 body{
-    font-family: 'Muli', sans-serif !important;
+    font-family: 'Questrial', sans-serif !important;
 }
 

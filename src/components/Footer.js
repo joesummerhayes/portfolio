@@ -12,7 +12,7 @@ export default function Footer() {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6 justify-content-around d-flex">
-                            <p>copyright &copy; tech store {new Date().getFullYear()}. all rights reserved{" "}</p>
+                            <p>copyright &copy; Joe Summerhayes {new Date().getFullYear()}. All rights reserved{" "}</p>
                             </div>
                             <div className="col-md-6 justify-content-around d-flex">
                             {value.socialData.map((item => {

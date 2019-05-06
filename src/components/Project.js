@@ -14,11 +14,11 @@ class Project extends React.Component {
                             <img src={img} alt={title} style={{height:"240.82px"}}/>
                         </div>
                         <div className="content" style={{padding: "1rem"}}>
-                            <span className="header">{title}</span>
-                            <div className="description">{description}</div>
+                            <span className="header text-capitalize">{title}</span>
+                            <div className="description py-3">{description}</div>
                             <div className="extra">
                                 <a href={url} target="_blank" rel="noopener noreferrer">
-                                <button className="ui blue basic button">check it out<i className="icon angle right"></i></button>
+                                <button className="cta-button">check it out<i className="icon angle right"></i></button>
                                 </a>
                             </div>
                         </div>
@@ -42,4 +42,17 @@ const ProjectWrapper = styled.div`
         box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.5);
     transform: scale(1.2);
     }
+   
+   .cta-button{
+       color: var(--mainOrange);
+       border-color: var(--mainOrange);
+       padding-top: 0.3rem;
+       padding-bottom: 0.3rem;
+       padding-left: 1rem;
+       transition: var(--mainTransion);
+   }
+.cta-button:hover{
+    color:var(--main2);
+    border-color: var(--main2);
+}
 `

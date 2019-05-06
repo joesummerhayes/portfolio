@@ -14,7 +14,12 @@ class Home extends React.Component {
                 
                 <div>
                     <ScrollIntoView selector='.scrollTo'>
-                        <Hero max="true" />
+                        <Hero
+                        max="true"
+                        title={<i
+                            className="chevron down icon"
+                            style={{fontSize:"4rem"}}
+                            ></i>}/>
                     </ScrollIntoView>
                 </div>
                 <div className="scrollTo">
