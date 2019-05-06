@@ -16,7 +16,7 @@ export default function Navbar() {
                 return (
                     <NavWrapper>
                         <div className="nav-center" style={{maxWidth:"1500px"}}>
-                            <Link to="" className="disable sidebarIcon nav-icon" onClick={handleSidebar}>
+                            <Link to="" className="disable sidebarIcon nav-icon" onClick={handleSidebar} style={{color:"var(--mainOrange)"}}>
                             <i className="bars icon"></i>
                             </Link>
                             <div className="nav-icon">
