@@ -29,7 +29,7 @@ export default function Navbar() {
                             </Link>
                             <Link to="/aboutMe" className="nav-link nav-icon disable">About Me</Link>
                             <Link to="/contact" className="nav-link nav-icon disable">Contact</Link>
-                            <audio class = "music" src={Song} controls />
+                            <audio className = "music" src={Song} controls />
                         </div>
                     </NavWrapper>
                 )

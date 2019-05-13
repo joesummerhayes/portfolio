@@ -1,4 +1,5 @@
 import React from 'react';
+import {client} from './contentful';
 import {socialData} from './socialData';
 
 //make a newq contxt
@@ -9,11 +10,31 @@ const MyContext = React.createContext();
 class MyProvider extends React.Component {
     state={
         sidebarOpen: false,
-        socialData
+        socialData: {},
+        myProjects: {}
+    };
+
+    componentDidMount() {
+        client
+        .getEntries({
+            content_type: 'portfolioContent'
+        })
+        .then(response => this.setProjects(response.items))
+        .catch(console.error);
+    };
+
+    setProjects = (products) => {
+        let myProjects = products.map((item) => {
+            const img = item.fields.img.fields.file.url;
+            const project = {...item.fields, img};
+            return project;
+        })
+        this.setState({
+            myProjects
+        })
     }
 
     handleSidebar = () => {
-        console.log('handle sidebar')
         this.setState({
             sidebarOpen: !this.state.sidebarOpen
         })
@@ -23,7 +44,8 @@ class MyProvider extends React.Component {
         return <MyContext.Provider
                 value={{
                     ...this.state,
-                    handleSidebar: this.handleSidebar
+                    handleSidebar: this.handleSidebar,
+                    socialData
                 }}>
                 {this.props.children}
             </MyContext.Provider>
