@@ -1,32 +1,33 @@
 import React from 'react';
 import {MyConsumer} from '../context';
 import styled from 'styled-components';
-import {projectData} from '../context/projectData';
 
 class Sidebar extends React.Component {
     render() {
         return (
             <MyConsumer>
                 {(value) => {
-                    const {sidebarOpen, handleSidebar} = value;
+                    const {sidebarOpen, handleSidebar, myProjects} = value;
 
                     return <SideWrapper show={sidebarOpen} onClick={handleSidebar}>
-                        <div>
-                        <ul>
-                            {projectData.map((project) => {
-                                return (
-                                    <a className="sidebar-link"
-                                    key={project.id}
-                                    style={{textDecoration: "none", color:"black"}}
-                                    target="_blank" rel="noopener noreferrer"
-                                    href={project.url}>
-                                    {project.title}
-                                    </a>
+                        {!myProjects.length ? (
+                            <div>Oh dear... there seems to be an error, please give Joe a nuggie</div>
+                        ) : (
+                                myProjects.map((project) => {
+                                    return (
+                                        <a className="sidebar-link"
+                                            key={project.id}
+                                            style={{textDecoration: "none", color: "black"}}
+                                            target="_blank" rel="noopener noreferrer"
+                                            href={project.url}>
+                                            {project.title}
+                                        </a>
+                                    )
+                                }
                                 )
-                            })}                            
-                        </ul>
-                        </div>
-                        </SideWrapper>
+                            )}
+
+                    </SideWrapper>
                 }}
             </MyConsumer>
         )

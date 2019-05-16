@@ -16,12 +16,12 @@ export default function Navbar() {
                 return (
                     <NavWrapper>
                         <div className="nav-center" style={{maxWidth:"1500px"}}>
-                            <Link to="/" className="disable sidebarIcon nav-icon" onClick={handleSidebar} style={{color:"var(--mainOrange)"}}>
+                            <Link className="disable sidebarIcon nav-icon" onClick={handleSidebar} style={{color:"var(--mainOrange)"}}>
                             <i className="bars icon"></i>
                             </Link>
                             <Link to="/" className="disable">
                             <div className="nav-icon">
-                            <img src={Logo}/>
+                            <img src={Logo} alt="image"/>
                             </div>
                             </Link>
                             <Link to="/" className="disable">
