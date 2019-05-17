@@ -21,7 +21,7 @@ export class Contact extends React.Component {
                             <textarea name="message" className="form-control" rows="10" placeholder="What would you like to get in touch about?" />
                         </div>
                         <div className="form-group mt-3">
-                            <input type="submit" value="send" className="form-control bg-primary text-white" />
+                            <input type="submit" value="send" className="form-control bg text-white" style={{backgroundColor:"var(--main2)"}} />
                         </div>
                     </form>
 
