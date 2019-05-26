@@ -5,8 +5,28 @@ class AboutMe extends React.Component {
         return (
             <>
             <div className="ui raised very padded text container segment mx-5">
-                <h2 className="ui header text-capitalize">my story so far</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h2 className="ui header text-capitalize">completed courses</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.udemy.com/node-with-react-fullstack-web-development/">Node with React: Fullstack web develeopmoent</a>
+                    </li>
+                    <li>
+                        <a href="https://www.udemy.com/react-redux/">React with Redux</a>
+                    </li>
+                    <li>
+                        <a href="https://www.udemy.com/react-tutorial-and-projects-course/">React Tutorial and Projects Course</a>
+                    </li>
+                    <li>
+                        <a href="https://www.udemy.com/up-and-running-with-jquery/">Up and Running with Jquery</a>
+                    </li>
+                    <li>
+                        <a href="https://www.udemy.com/the-complete-javascript-course/">The Complete Javascript Course</a>
+                    </li>
+                </ul>
+                <h2 className="ui header text-capitalize">Technical Skills</h2>
+                <div>
+                Javascript, CSS/ SASS, HMTL, React, Meteor, MongoDB, Redux, JQuery  
+                </div>
             </div>
             </>
         )
