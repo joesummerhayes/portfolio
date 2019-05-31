@@ -32,7 +32,7 @@ class AboutMe extends React.Component {
 code from scratch! I instantly fell in love with it and found myself coding at every given
 opportunity; on my lunch breaks at work, in the evenings, on the train. Being completely
 new to it all I had to start right from the beginning, learning basic HTML and CSS on
-Code Academy. I found Code Academy’s command line interface frustrating at times so moved to
+Code Academy. I found Code Academy frustrating to use at times so moved to
 Udemy (which I’d heard great things about). I completed a fantastic extensive course on
 vanilla javascript that took me a couple of months to get through. After I had the basics down,
 I immediately looked to frameworks and decided Jquery would probably be a good stepping stone
